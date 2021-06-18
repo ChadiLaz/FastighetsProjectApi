@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/fastighetsprojectapi-ccradbserver/databases/FastighetsProjectApi-CCRA_db",
+      "type": "mssql.azure",
+      "connectionId": "DbContext",
+      "secretStore": "LocalSecretsFile"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/fastighetsprojectapi-ccradbserver/databases/IdentitetDBAPI",
+      "type": "mssql.azure",
+      "connectionId": "FastighetsProjectApi_CCRAContextConnection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}

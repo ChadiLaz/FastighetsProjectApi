@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FastighetsProjectApi-CCRA</name>
+    </assembly>
+    <members>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.AuthorizeController.GetToken(FastighetsProjectApi_CCRA.Model.MyLoginModelType)">
+            <summary>
+            Loggs in the User
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.AuthorizeController.Register(FastighetsProjectApi_CCRA.Model.MyLoginModelType)">
+            <summary>
+            Creates a new User with a Username Email-Adress and password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.CommentsController.GetCommentsTS(System.Int32,FastighetsProjectApi_CCRA.HelpClasses.SkipTakeParameters)">
+            <summary>
+            Requires user to Login and requires an ID, Returns Comments but skips over S comments and gets the T comments.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.CommentsController.GetCommentsByUserTS(System.String,FastighetsProjectApi_CCRA.HelpClasses.SkipTakeParameters)">
+            <summary>
+            Requires user to Login,Returns all the comments posted by a specific user using his Username, returns only 10 comments.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.CommentsController.PostComment(FastighetsProjectApi_CCRA.Model.Comment)">
+            <summary>
+            Requires user to Login.Creates a new comment.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.RealEstatesController.GetRealEstatesQuery(FastighetsProjectApi_CCRA.HelpClasses.SkipTakeParameters)">
+            <summary>
+            
+            Does not require to login. Returns Realestates but skips over S advertisments and gets the T advertisments
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.RealEstatesController.GetRealEstate(System.Int32)">
+            <summary>
+            Does not require login. Gets one RealEstate by ID, the users that are not logged cannot see the comments or the contact information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.RealEstatesController.PostRealEstate(FastighetsProjectApi_CCRA.Model.RealEstate)">
+            <summary>
+            Creates one RealEstate with all the rquired information for it.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.UsersController.GetUser(System.String)">
+            <summary>
+            Does not require the user to loign,Returns the users Username, number of advertisments posted, comments and the rating of the user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FastighetsProjectApi_CCRA.Controllers.UsersController.PostUserRating(FastighetsProjectApi_CCRA.HelpClasses.GuidRating)">
+            <summary>
+            Requires user to Login, Users can Rate a user from a scale of 1-5.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
